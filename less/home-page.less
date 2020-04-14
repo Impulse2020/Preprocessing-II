@@ -1,3 +1,21 @@
+@media @tablet{
+  .home{
+max-width:80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home {
 
   .content-section {
@@ -57,16 +75,13 @@
       width: 30%;
       margin-bottom: 30px;
       .btn{
-        background-color:#008080;
-        font-size:2.25rem;
-        width:100%;
-        padding: 18px 0%;
-        color:#ffffff;
-      
-        text-align:center;
-        border:1px solid #c0c0c0;
-        border-radius:12px;
+        .button(#008080,#c0c0c0);
+        
       }
+      .btn:hover{
+        
+        background-color:lighten(#008080, 15%)
+       }
     }
   }
 }// home
