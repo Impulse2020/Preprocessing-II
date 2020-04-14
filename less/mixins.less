@@ -1,1 +1,12 @@
 // Mixins in here
+
+.center(){
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+.flexing(@display, @justify,@align){
+    display:@display;
+    justify-content:@justify;
+    align-content:@align;
+}

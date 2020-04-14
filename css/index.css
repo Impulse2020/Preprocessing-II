@@ -136,6 +136,14 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+header {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 h1,
 h2,
 h3,
@@ -167,6 +175,10 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+ul li {
+  display: inline;
+  font-size: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -223,4 +235,18 @@ img {
   text-align: center;
   border: 1px solid #c0c0c0;
   border-radius: 12px;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background-color: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
