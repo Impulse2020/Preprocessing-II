@@ -1,21 +1,3 @@
-@media @tablet{
-  .home{
-max-width:80%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home {
 
   .content-section {
@@ -85,3 +67,32 @@ max-width:80%;
     }
   }
 }// home
+@media @tablet{
+  .home{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    
+  .content-section,.content-destination{
+    flex-direction: column;
+    .center();
+      }
+  .inverse-content{
+    .center();
+    flex-direction: column-reverse;
+      }
+    }
+  }
+@media @phone{
+.home{
+  width:80%;
+  display:flex;
+  flex-direction: column;
+.content-section,.content-destination{
+  flex-direction: column;
+    }
+.inverse-content{
+  flex-direction: column-reverse;
+    }
+  }
+}
