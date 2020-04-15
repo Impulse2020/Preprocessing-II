@@ -1,5 +1,27 @@
 .home {
-
+  header{
+  margin:1%;
+  padding:.5% .5%;
+  div{
+  width:20%;
+  padding:2% 0% 2% 0%;
+  }
+  }
+  .opener{
+    width:100%;
+    margin:1%;
+    div{
+      border-bottom:2px dashed @navigation-border;
+    }
+    div img{
+      position:relative;
+      width:100%;
+      height:auto;
+      padding:2% 1%;
+      .center();
+      border-top:2px dashed @navigation-border;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -74,20 +96,29 @@
       flex-direction: column;
       
       header{
+        .center();
         flex-direction: column;
-        text-align:center;
-      }
+        align-items:center;
+        nav{
+        justify-content: center;
+          }
+        }
     .content-section, .content-destination{
       flex-direction: column;
       .center();
       .text-content{
         width:95%;
-        align-content: center;
+        .center();
+        flex-direction: column;
       }
       .img-content{
         width:100%;
         height:auto;
-        align-content: center;
+        .center();
+        img{
+          width:100%;
+          height:auto;
+        }
       }
     }
     .inverse-content{
@@ -106,6 +137,7 @@
     }   
   }
 }
+
 @media @phone{
   .home{
     width:95%;
@@ -115,18 +147,28 @@
     header{
       flex-direction: column;
       text-align:center;
+      .center();
       }
     }
   .content-section, .content-destination{
     width:95%;
+    margin:1%;
     flex-direction: column;
     .center();
     .text-content{
       width:95%;
+      height:auto;
+      flex-direction: column;
+      .center();
     }
     .img-content{
       width: 100%;
       height:auto;
+      .center();
+      img{
+        width:100%;
+        height:auto;
+      }
     }
       }
   .inverse-content{
