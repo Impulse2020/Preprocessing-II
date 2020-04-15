@@ -178,15 +178,21 @@ img {
 }
 nav {
   display: flex;
-  align-content: flex-end;
+  width: 80%;
+  justify-content: flex-end;
 }
 nav ul {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
 }
 nav ul li {
   display: inline;
+  justify-content: flex-end;
   font-size: 2rem;
-  justify-content: space-between;
+  margin: 2%;
+  padding: 6% 2% 6% 2%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -251,13 +257,30 @@ nav ul li {
   .home {
     width: 95%;
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
+  }
+  .home header {
+    flex-direction: column;
+    text-align: center;
   }
   .home .content-section,
   .home .content-destination {
     flex-direction: column;
     display: flex;
     justify-content: center;
+    align-content: center;
+  }
+  .home .content-section .text-content,
+  .home .content-destination .text-content {
+    width: 95%;
+    align-content: center;
+  }
+  .home .content-section .img-content,
+  .home .content-destination .img-content {
+    width: 100%;
+    height: auto;
     align-content: center;
   }
   .home .inverse-content {
@@ -281,29 +304,45 @@ nav ul li {
   .home {
     width: 95%;
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
   }
-  .home .content-section,
-  .home .content-destination {
+  .home header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-section,
+  .content-destination {
+    width: 95%;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  .home .inverse-content {
+  .content-section .text-content,
+  .content-destination .text-content {
+    width: 95%;
+  }
+  .content-section .img-content,
+  .content-destination .img-content {
+    width: 100%;
+    height: auto;
+  }
+  .inverse-content {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column-reverse;
   }
-  .home .content-pick {
+  .content-pick {
     flex-direction: column;
     align-items: center;
   }
-  .home .content-pick .destination {
+  .content-pick .destination {
     width: 100%;
   }
-  .home .content-pick .destination h4 {
+  .content-pick .destination h4 {
     text-align: center;
   }
 }
